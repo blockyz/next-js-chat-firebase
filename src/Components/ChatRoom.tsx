@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "firebase/auth";
 import { getFirestore, doc, getDoc, setDoc, collection, addDoc, query, onSnapshot, serverTimestamp, orderBy, setLogLevel } from "firebase/firestore";
 import { ArrowRight, MessageSquare, LogIn, User, KeyRound, Sparkles, BookOpen, X, Loader2 } from "lucide-react";
-import { firebaseConfig } from "@/app/page";
+import { firebaseConfig } from "@/Constants";
 export default function ChatRoom({ db, roomCode }: any) {
   const [messages, setMessages] = useState<any>([]);
   const [newMessage, setNewMessage] = useState("");

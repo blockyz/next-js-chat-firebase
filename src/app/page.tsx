@@ -6,18 +6,10 @@ import { getFirestore, doc, getDoc, setDoc, collection, addDoc, query, onSnapsho
 import { ArrowRight, MessageSquare, LogIn, User, KeyRound, Sparkles, BookOpen, X, Loader2 } from "lucide-react";
 import LoginPage from "@/Components/LoginPage";
 import ChatRoom from "@/Components/ChatRoom";
+import { firebaseConfig } from "@/Constants";
 
 // --- Firebase Configuration ---
 // This configuration is now hardcoded to ALWAYS use your 'pbyz-13' project.
-export const firebaseConfig = {
-  apiKey: "AIzaSyCUfgSk7tvILtPgOzxB470Du5s9BLA5LOc",
-  authDomain: "pbyz-13.firebaseapp.com",
-  projectId: "pbyz-13",
-  storageBucket: "pbyz-13.firebasestorage.app",
-  messagingSenderId: "384278929356",
-  appId: "1:384278929356:web:2fc21a2c82fad47409c769",
-};
-
 // --- App ID ---
 // This ID is provided by the environment and is used to create the database path.
 const appId = "1:384278929356:web:2fc21a2c82fad47409c769";

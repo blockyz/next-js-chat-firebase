@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "firebase/auth";
 import { getFirestore, doc, getDoc, setDoc, collection, addDoc, query, onSnapshot, serverTimestamp, orderBy, setLogLevel } from "firebase/firestore";
-import { firebaseConfig } from "@/app/page";
 import { KeyRound, Loader2, LogIn, MessageSquare } from "lucide-react";
+import { firebaseConfig } from "@/Constants";
 export default function LoginPage({ db, onLoginSuccess }: any) {
   const [roomCode, setRoomCode] = useState("");
   const [password, setPassword] = useState("");
