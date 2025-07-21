@@ -11,8 +11,8 @@ import WelcomePage from "@/Components/WelcomePage";
 
 export default function Home() {
   const [db, setDb] = useState<any>(null);
-  const [isAuthReady, setIsAuthReady] = useState(false);
-
+  const [_, setIsAuthReady] = useState(false);
+  const isAuthReady = true;
   // --- Session State with localStorage Persistence ---
   const [session, setSession] = useState(() => {
     // On initial load, try to get the session from localStorage.
